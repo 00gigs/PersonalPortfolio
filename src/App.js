@@ -1,8 +1,15 @@
 import './App.css';
+import Navbar from './components/navbar';
 function App() {
   return (
     <div className="App">
-     {/**fill components that make up application */}
+     <Navbar/>
+     {/**fill in styled divs with components that make up application */}
+     <div>{/**make sections with styled div*/}</div>
+     <div>{/**make sections with styled div*/}</div>
+     <div>{/**make sections with styled div*/}</div>
+     <div>{/**make sections with styled div*/}</div>
+     <div>{/**make sections with styled div*/}</div>
     </div>
   );
 }
