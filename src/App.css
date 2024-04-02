@@ -4,3 +4,19 @@
     -webkit-backdrop-filter: blur(10px); /* For Safari */
     border: 1px solid rgba(255, 255, 255, 0.18); /* Optional: adds a slight border */
   }
+
+
+
+@keyframes slideIn {
+    0% {
+      transform: translateX(-50vw);
+    }
+    100% {
+      transform: translateX(100vw);
+    }
+  }
+  
+  .moving-text {
+    display: inline-block; /* Required for the text to move within the container */
+    animation: slideIn 5s linear infinite running;
+  }

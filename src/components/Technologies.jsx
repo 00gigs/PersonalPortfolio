@@ -7,11 +7,14 @@ import { FaPython } from "react-icons/fa6";
 {/**tech stacks */}
 const Technologies = () => {
   return (
-    <div>
+    <div className='w-full'>
+        <div className='text-5xl moving-text'>TECHNOLOGIES</div>
+        <div className='flex'>
          <FaPython />
       <SiJavascript />
         <FaNode />
         <FaJava />
+        </div>
     </div>
   )
 }
