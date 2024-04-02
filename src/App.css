@@ -1,0 +1,6 @@
+.glass-effect {
+    background: rgba(255, 255, 255, 0.2); /* White background with opacity */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Optional: adds a slight border */
+  }

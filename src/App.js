@@ -1,18 +1,20 @@
 import "./App.css";
+import Header from "./components/Header";
 import Navbar from "./components/navbar";
+import Technologies from "./components/Technologies";
 function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-slate-100">
       <Navbar />
       {/**fill in styled divs with components that make up application */}
-      <div className="bg-[#28373951] h-[70vh] w-full">
+      <div className="bg-[#88b5bb51] h-[70vh] w-full">
         {/**make |hero section| sections with styled div*/}
-        <div className="grid grid-cols-2">
-          <h1 className=" font-rubik font-bold text-center text-5xl py-10 ">MEET JAMES HARRINGTON, The FullStack Dev👨🏻‍💻</h1>
+        <div className="grid  grid-cols-2">
+         <Header/> 
           {/**Main title or welcome message */}
-          <p className="flex justify-start ml-12 font-raleway font-thin mt-8">
-            First i would like to thank you for taking the time to  visit my page. You are here to view my skill set and understand why we should engage in business. I want my technology and skills to benefit you and fit your needs.
-        
+          <p className="flex justify-start font-raleway font-thin text-[25px] mt-8">
+          First, thank you for taking the time to visit my page. You are here to view my skills and understand why we should engage in business.
+         I want my technology and skills to benefit you and fit your needs. As we peel back the layers of my full-stack development capabilities, you'll discover  solutions  that have propelled businesses forward. My portfolio you are seeking  is not just coding exercises; they are a testament to strategic problem-solving and cutting-edge  design. Prepare to witness how my expertise can transform your ideas into reality, leaving you anticipating the untapped potential we can unlock together.   
           </p>
         </div>
       </div>
@@ -20,9 +22,9 @@ function App() {
         {/**make sections with styled div*/}
       </div>
       <div className="bg-[#a2c11c] h-[69vh] w-full">
-        {/**make sections with styled div*/}
+      <Technologies/>
       </div>
-      <div className="bg-[#adacac] h-[50vh] w-full">
+      <div className="bg-[#e3cccc] h-[50vh] w-full">
         {/**make sections with styled div*/}
       </div>
       <div className="bg-[#2c5d63] h-[20vh] w-full">
