@@ -53,7 +53,8 @@ const Navbar = () => {
 
 
   return (
-    <div className='font-noto-sans text-[34px]  h-[80px] sticky top-0 glass-effect'>
+    <div className='sticky top-0'>
+    <div className='font-noto-sans text-[34px]  h-[80px]  glass-effect'>
       <div ref={containerRef}  className='flex justify-between w-full items-center p-3'>
         <div  style={{ transform: iconTransform() }}>
           <a href='/'>
@@ -61,13 +62,24 @@ const Navbar = () => {
           </a>
         </div>
       <div className='flex gap-6'>
-   
       </div>
         <div className='cursor-pointer'>
         {!openMenu && <RiMenu5Line onClick={toggle} />}
         {openMenu && <GrClose onClick={toggle} />}
         </div>
       </div>
+    </div>
+    <div>
+     
+ {openMenu && (<div className='flex glass-effect h-14 justify-end' 
+><ul className='flex gap-10 my-2 mr-7'>
+  <li className='cursor-pointer bg-[#ddf3b29f] rounded-xl p-2 hover:bg-[#ddf3b2ed]'>Menu item 1</li>
+  <li className='cursor-pointer bg-[#ddf3b29f] rounded-xl p-2 hover:bg-[#ddf3b2ed]'>Menu item 2</li>
+  <li className='cursor-pointer bg-[#ddf3b29f] rounded-xl p-2 hover:bg-[#ddf3b2ed]'>Menu item 3</li>
+</ul>
+
+</div>)}
+    </div>
     </div>
   )
 }
