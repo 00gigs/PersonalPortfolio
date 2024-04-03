@@ -14,7 +14,7 @@ const Carousel = () => {
   return (
     <>
       <Swiper
-        className="mySwiper swiper-h"
+        className="mySwiper swiper-h "
         spaceBetween={50}
         pagination={{
           clickable: true,
@@ -23,7 +23,7 @@ const Carousel = () => {
       >
         <SwiperSlide>
           <Swiper
-            className="mySwiper2 swiper-v"
+            className="mySwiper2 swiper-v horizontal-spacing"
             direction={"vertical"}
             spaceBetween={50}
             pagination={{
@@ -39,7 +39,7 @@ const Carousel = () => {
         </SwiperSlide>
         <SwiperSlide>
           <Swiper
-            className="mySwiper2 swiper-v"
+            className="mySwiper2 swiper-v horizontal-spacing"
             direction={"vertical"}
             spaceBetween={50}
             pagination={{
@@ -55,7 +55,7 @@ const Carousel = () => {
         </SwiperSlide>
         <SwiperSlide>
           <Swiper
-            className="mySwiper2 swiper-v"
+            className="mySwiper2 swiper-v horizontal-spacing"
             direction={"vertical"}
             spaceBetween={50}
             pagination={{

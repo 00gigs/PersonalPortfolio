@@ -27,7 +27,7 @@ function App() {
           </p>
         </div>
       </div>
-      <div className="bg-[#2c5d63] h-[80vh] w-full text-center">
+      <div className="bg-[#2c5d63] h-[85vh] w-full text-center">
         <div class="custom-shape-divider-bottom-1712158986">
           <svg
             data-name="Layer 1"
@@ -59,8 +59,11 @@ function App() {
         <h1 className="font-roboto font-bold text-4xl moving-text tracking-widest my-10 shadow-2xl bg-slate-300 p-2 rounded-xl">
           PERSONAL PROJECTS💡
         </h1>
-        {/**put carousel displaying projects HERE in a seperate component*/}
+    
+
         <Carousel/>
+
+        {/**put carousel displaying projects HERE in a seperate component*/}
       </div>
       <div className="bg-[#a2c11c] h-[65vh] w-full">
         <Technologies />
@@ -70,6 +73,8 @@ function App() {
       </div>
       <div className="bg-[#2c5d63] h-[20vh] w-full">
         {/**make sections with styled div*/}
+        Social links 
+        contact CTA
       </div>
     </div>
   );
