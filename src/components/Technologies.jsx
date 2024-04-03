@@ -10,6 +10,7 @@ import { SiMongodb } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { FaWordpressSimple } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
+import { LiaPhp } from "react-icons/lia";
 {/**tech stacks */}
 const Technologies = () => {
   return (
@@ -27,6 +28,7 @@ const Technologies = () => {
         <GrMysql />
         <FaWordpressSimple />
         <SiTypescript />
+        <LiaPhp />
         </div>
     </div>
   )

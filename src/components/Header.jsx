@@ -8,7 +8,7 @@ const Header = () => {
       // Animate your text using GSAP
       gsap.set(textRef.current, { opacity: 0 });
       gsap.to(textRef.current, {
-        duration: 2.5, // Animation duration in seconds
+        duration: 1.55, // Animation duration in seconds
         opacity:1,
         y: 100, // Move horizontally
         ease: 'bounce.out', // Type of easing (see GSAP documentation for more options)

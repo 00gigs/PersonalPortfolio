@@ -56,7 +56,9 @@ const Navbar = () => {
     <div className='font-noto-sans text-[34px]  h-[80px] sticky top-0 glass-effect'>
       <div ref={containerRef}  className='flex justify-between w-full items-center p-3'>
         <div  style={{ transform: iconTransform() }}>
+          <a href='/'>
         <FaPerson className='cursor-pointer h-14 w-11 hover:text-green-600 ml-10'/>
+          </a>
         </div>
       <div className='flex gap-6'>
    
