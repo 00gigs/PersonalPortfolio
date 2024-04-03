@@ -18,8 +18,9 @@ function App() {
           </p>
         </div>
       </div>
-      <div className="bg-[#2c5d63] h-[45vh] w-full">
+      <div className="bg-[#2c5d63] h-[65vh] w-full text-center">
         {/**make sections with styled div*/}
+        <h1 className="pt-5 font font-roboto font-bold text-4xl">PERSONAL GROWTH🚀</h1>
       </div>
       <div className="bg-[#a2c11c] h-[69vh] w-full">
       <Technologies/>
