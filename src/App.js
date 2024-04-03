@@ -8,7 +8,7 @@ function App() {
     <div className="min-h-screen bg-slate-100">
       <Navbar />
       {/**fill in styled divs with components that make up application */}
-      <div className="bg-[#88b5bb51] h-[70vh] w-full">
+      <div className="bg-[#88b5bb51] h-[65vh] w-full">
         {/**make |hero section| sections with styled div*/}
         <div className="grid  grid-cols-2">
           <Header />

@@ -6,20 +6,25 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "../../src/App.css";
-
+import 'swiper/css/autoplay';
 // import required modules
-import { Pagination } from "swiper/modules";
+import { Pagination,Autoplay } from "swiper/modules";
 
 const Carousel = () => {
   return (
     <>
       <Swiper
-        className="mySwiper swiper-h "
+    
+        className="mySwiper swiper-h"
         spaceBetween={50}
+         modules={[Pagination, Autoplay]} 
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
+        autoplay={{ // Configure autoplay options here
+          delay: 3500, // Delay between transitions (in ms). Here it's set for 2 seconds.
+          disableOnInteraction: true, // This means autoplay won't be disabled after user interactions (swipes, etc.)
+        }}
       >
         <SwiperSlide>
           <Swiper
