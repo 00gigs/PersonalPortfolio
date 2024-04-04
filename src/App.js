@@ -1,19 +1,40 @@
 import "./App.css";
+import React, { useRef } from 'react';
 import Carousel from "./components/Carousel";
 import Header from "./components/Header";
 import Navbar from "./components/navbar";
 import Technologies from "./components/Technologies";
 function App() {
+
+  const sectionRef = useRef(null);
+
+  const heroSectionRef = useRef(null);
+  const projectsSectionRef = useRef(null);
+  const technologiesSectionRef = useRef(null);
+  // Define more refs as needed for each section
+
+  // Function to handle navigation to a section
+  const scrollToSection = (sectionRef) => {
+    console.log(sectionRef.current); 
+    if (sectionRef && sectionRef.current) {
+      window.scrollTo({
+        top: sectionRef.current.offsetTop,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-slate-100">
-      <Navbar />
+    <div className="mainmain">
+    <div className="  bg-slate-100">
+      <Navbar ref={sectionRef} scrollToSection={scrollToSection} heroRef={heroSectionRef} projectsRef={projectsSectionRef} technologiesRef={technologiesSectionRef}/>
       {/**fill in styled divs with components that make up application */}
-      <div className="bg-[#88b5bb51] h-[65vh] w-full">
+      <div className="bg-[#88b5bb51] h-[90vh] w-full  sectional ">
         {/**make |hero section| sections with styled div*/}
-        <div className="grid  grid-cols-2">
+        <div className="grid  grid-cols-2 items-center">
           <Header />
           {/**Main title or welcome message */}
-          <p className="flex justify-start font-raleway font-thin text-[25px] mt-8">
+          <p className="flex justify-start font-raleway font-thin text-[25px] mt-[6rem]">
             First, thank you for taking the time to visit my page. You are here
             to view my skills and understand why we should engage in business. I
             want my technology and skills to benefit you and fit your needs. As
@@ -27,7 +48,7 @@ function App() {
           </p>
         </div>
       </div>
-      <div className="bg-[#2c5d63] h-[85vh] w-full text-center">
+      <div className="bg-[#2c5d63] h-[90vh] w-full text-center  sectional ">
         <div class="custom-shape-divider-bottom-1712158986">
           <svg
             data-name="Layer 1"
@@ -65,7 +86,7 @@ function App() {
 
         {/**put carousel displaying projects HERE in a seperate component*/}
       </div>
-      <div className="bg-[#a2c11c] h-[65vh] w-full">
+      <div className="bg-[#a2c11c] h-[90vh] w-full  sectional">
 <div class="custom-shape-divider-top-1712164460">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill" fill="#2c5d63"></path>
@@ -73,15 +94,19 @@ function App() {
 </div>
         <Technologies />
       </div>
-      <div className="bg-[#e3cccc] h-[50vh] w-full">
+      <div className="bg-[#e3cccc] h-[90vh] w-full  sectional">
         {/**make sections with styled div*/}
       </div>
-      <div className="bg-[#2c5d63] h-[20vh] w-full">
+      <div className="bg-[#2c5d63] h-[90vh] w-full  sectional">
         {/**make sections with styled div*/}
         Social links 
         contact CTA
       </div>
     </div>
+
+    </div>
+
+    
   );
 }
 
