@@ -10,6 +10,9 @@ import "swiper/css/autoplay";
 import save1 from "../images/smartsave1.png";
 import save2 from "../images/smartsave2.png";
 import save3 from "../images/smartsave3.png";
+import hanz1 from "../images/hanz1.png";
+import hanz2 from "../images/hanz2.png";
+import hanz3 from "../images/hanz3.png";
 // import required modules
 import { Pagination, Autoplay } from "swiper/modules";
 
@@ -29,13 +32,9 @@ const Carousel = () => {
           disableOnInteraction: true, // This means autoplay won't be disabled after user interactions (swipes, etc.)
         }}
       >
-        
         <SwiperSlide>
-          <div className="h-1 mt-3 font-rubik font-bold text-2xl cursor-pointer text-teal-300 hover:text-3xl shadow-2xl">
-<a href="https://smartsave.onrender.com">
-  Smart Save
-</a>
-          
+          <div className="h-1 mt-3 font-rubik font-bold text-2xl cursor-pointer text-slate-300 hover:text-3xl shadow-2xl underline">
+            <a href="https://smartsave.onrender.com">Smart Save</a>
           </div>
           <Swiper
             className="mySwiper2 swiper-v horizontal-spacing"
@@ -74,6 +73,9 @@ const Carousel = () => {
           </Swiper>
         </SwiperSlide>
         <SwiperSlide>
+            <div className="h-1 mt-3 font-rubik font-bold text-2xl cursor-pointer text-slate-300 hover:text-3xl shadow-2xl underline">
+           <a href="https://smartsave.onrender.com">HANZ</a>
+         </div>
           <Swiper
             className="mySwiper2 swiper-v horizontal-spacing"
             direction={"vertical"}
@@ -88,13 +90,30 @@ const Carousel = () => {
               disableOnInteraction: true, // This means autoplay won't be disabled after user interactions (swipes, etc.)
             }}
           >
-            <SwiperSlide>project 2 Descript</SwiperSlide>
-            <SwiperSlide>project 2 Screenshot Slide 1</SwiperSlide>
-            <SwiperSlide>project 2 Screenshot Slide 2</SwiperSlide>
-            <SwiperSlide>project 2 Screenshot Slide 3</SwiperSlide>
+            <SwiperSlide>
+              <div className="mt-3 p-1 font-semibold font-poppins mx-2 text-[17px]">
+              Hanz , the "Thumbtack" alternative that is more cost effective ,local
+              community oriented and secure as an intermediary between customer
+              and laborer. The Website is built on a NextJS framework with
+              React with a custom built fetch API integrated with MongoDb for
+              serverSide actions. I developed this Website with a vision in mind. 
+              In my younger year  I did moving and hauling on the side for extra income. I seen the potential 
+              the internet can give to a business and decided to try and generate my own bulk trash leads. This led me to the creation 
+              of Hanz{" "}
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={hanz1} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={hanz2} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={hanz3} />
+            </SwiperSlide>
           </Swiper>
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <Swiper
             className="mySwiper2 swiper-v horizontal-spacing"
             direction={"vertical"}
@@ -114,7 +133,7 @@ const Carousel = () => {
             <SwiperSlide>project 3 Screenshot Slide 2</SwiperSlide>
             <SwiperSlide>project 3 Screenshot Slide 3</SwiperSlide>
           </Swiper>
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </>
   );
