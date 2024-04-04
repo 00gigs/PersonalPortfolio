@@ -51,7 +51,7 @@ const Carousel = () => {
             }}
           >
             <SwiperSlide>
-              <div className="mt-6 p-1 font-semibold font-poppins mx-2 text-[20px]">
+              <div className="mt-6 p-1 font-semibold font-noto-sans mx-2 text-[20px]">
                 This Web application was my first fullstack deployment.A fintech
                 application that encourages users to be proactive about
                 investing and saving using Personal Development Planning
@@ -74,7 +74,7 @@ const Carousel = () => {
         </SwiperSlide>
         <SwiperSlide>
             <div className="h-1 mt-3 font-rubik font-bold text-2xl cursor-pointer text-slate-300 hover:text-3xl shadow-2xl underline">
-           <a href="https://smartsave.onrender.com">HANZ</a>
+           <a href='/'>HANZ</a>
          </div>
           <Swiper
             className="mySwiper2 swiper-v horizontal-spacing"
@@ -91,7 +91,7 @@ const Carousel = () => {
             }}
           >
             <SwiperSlide>
-              <div className="mt-3 p-1 font-semibold font-poppins mx-2 text-[17px]">
+              <div className="p-2 font-semibold font-noto-sans mx-2 text-[18px]">
               Hanz , the "Thumbtack" alternative that is more cost effective ,local
               community oriented and secure as an intermediary between customer
               and laborer. The Website is built on a NextJS framework with
