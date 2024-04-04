@@ -6,13 +6,22 @@ const Header = () => {
 
     useEffect(() => {
       // Animate your text using GSAP
-      gsap.set(textRef.current, { opacity: 0 });
-      gsap.to(textRef.current, {
-        duration: 1.55, // Animation duration in seconds
-        opacity:1,
-        y: 100, // Move horizontally
-        ease: 'bounce.out', // Type of easing (see GSAP documentation for more options)
-      });
+      const tl = gsap.timeline({ defaults: { ease: 'power1.inOut' } });
+
+    // Initial bounce in effect
+    tl.fromTo(textRef.current, 
+      { opacity: 0, y: -250 }, 
+      { opacity: 1, y: 90, duration: 1.5, ease: 'bounce.out' }
+    );
+
+    // Continuous floating effect after the bounce in
+    tl.to(textRef.current, {
+      y: '70', // Move up. Adjust the value to control the height of the movement.
+      repeat: -1, // Infinite repeats
+      yoyo: true, // Go back and forth between the starting and ending values
+      duration: 1.5,
+       // Duration of the up and down movement
+    });
     }, []); // Empty dependency array ensures this runs once on mount
   
 
