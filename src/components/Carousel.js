@@ -51,12 +51,14 @@ const Carousel = () => {
             }}
           >
             <SwiperSlide>
-              <div className="mt-6 p-1 font-semibold font-noto-sans mx-2 text-[20px]">
-                This Web application was my first fullstack deployment.A fintech
+              <div className="mt-6 p-1 font-semibold font-noto-sans mx-2 text-[19px]">
+                This Web application was my first fullstack deployment. A fintech
                 application that encourages users to be proactive about
                 investing and saving using Personal Development Planning
                 techniques and goals.It encompasses the frontend power of react
-                and NextJs, with MongoDB data architecture made in javascript
+                and NextJs, with a MongoDB data base architecture written in javascript.
+                I aded an economic news api so user can stay up to dat with the live economy and a 
+                community user forum wehre users share financial tips.
               </div>
             </SwiperSlide>
             <SwiperSlide>

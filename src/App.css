@@ -18,6 +18,7 @@
   .moving-text {
     display: inline-block; /* Required for the text to move within the container */
     animation: slideIn 20s linear infinite running;
+    
   }
 
 /*Carousel swiping*/
@@ -57,7 +58,7 @@ border-radius: 3%;
 
 .swiper-v {
 margin-top: 8%;
-  background: #dbe3e422;
+  background: #e3e3e375;
 }
 
 

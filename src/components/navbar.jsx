@@ -20,7 +20,7 @@ const Navbar = ({ scrollToSection, heroRef, projectsRef, technologiesRef }) => {
     <div className='sticky top-0'>
     <div className='font-noto-sans text-[34px]  h-[80px]  glass-effect'>
       <div ref={containerRef}  className='flex justify-between w-full items-center p-3'>
-        <div  className='ml-[1rem] bg-black text-white rounded-xl text-[28px] p-1 font-poppins uppercase hover:text-green-100'>
+        <div  className='ml-[1rem] bg-black text-white rounded-xl text-[28px] p-1 font-poppins uppercase hover:text-green-100 hover:duration-500 hover:tracking-widest'>
       <button>
           Consult Now{/**once clicked should snap scroll to contact forum  */}
       </button>
