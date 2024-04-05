@@ -4,6 +4,8 @@ import Carousel from "./components/Carousel";
 import Header from "./components/Header";
 import Navbar from "./components/navbar";
 import Technologies from "./components/Technologies";
+import Portrait from "./components/portrait";
+
 function App() {
 
   const sectionRef = useRef(null);
@@ -96,12 +98,22 @@ function App() {
         <Technologies />
       </div>
       <div className="bg-[#e3cccc] h-[90vh] w-full  sectional">
-        {/**make sections with styled div*/}
+        {/**make sections with styled div*/} 
+        {/**image blob*/}
+        {/* <svg viewBox="15 16 200 200" xmlns="http://www.w3.org/2000/svg">
+<clipPath id="clipBlob">
+  <path d="M21.4,-39.7C28.7,-28.6,36.2,-24.3,46.3,-16.9C56.3,-9.4,68.9,1.1,72.1,13.5C75.2,25.9,69,40.2,59.4,51.8C49.8,63.5,36.9,72.5,24.1,71.5C11.2,70.5,-1.5,59.4,-16.1,55.1C-30.7,50.7,-47.2,52.9,-55.7,46.4C-64.1,39.9,-64.6,24.6,-63.1,11.3C-61.5,-2,-58,-13.5,-55.2,-27.6C-52.4,-41.7,-50.4,-58.6,-41.4,-68.8C-32.3,-79.1,-16.2,-82.8,-4.6,-75.7C7.1,-68.6,14.1,-50.8,21.4,-39.7Z" transform="translate(55 65)  scale(0.6)" />
+</clipPath>
+<image href={image} width="100" height="100" clip-path="url(#clipBlob)" />
+</svg> */}
+<Portrait/>
+        {/**image blob */}
+
       </div>
       <div className="bg-[#2c5d63] h-[90vh] w-full  sectional">
         {/**make sections with styled div*/}
         Social links 
-        contact CTA
+        contact CTA/FORUM
       </div>
     </div>
 
