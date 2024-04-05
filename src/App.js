@@ -5,31 +5,30 @@ import Header from "./components/Header";
 import Navbar from "./components/navbar";
 import Technologies from "./components/Technologies";
 import Portrait from "./components/portrait";
-
+import Contact from "./components/Contact";
+import { FaLinkedin,FaGithub } from "react-icons/fa";
 function App() {
 
   const sectionRef = useRef(null);
 
-  const heroSectionRef = useRef(null);
+  const AboutSectionRef = useRef(null);
   const projectsSectionRef = useRef(null);
   const technologiesSectionRef = useRef(null);
+  const contactRef = useRef(null);
   // Define more refs as needed for each section
 
   // Function to handle navigation to a section
   const scrollToSection = (sectionRef) => {
-    console.log(sectionRef.current); 
+    console.log("Attempting to scroll to section", sectionRef.current); 
     if (sectionRef && sectionRef.current) {
-      window.scrollTo({
-        top: sectionRef.current.offsetTop,
-        behavior: 'smooth',
-      });
+      sectionRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
   return (
     <div className="mainmain">
     <div className="  bg-slate-100">
-      <Navbar ref={sectionRef} scrollToSection={scrollToSection} heroRef={heroSectionRef} projectsRef={projectsSectionRef} technologiesRef={technologiesSectionRef}/>
+      <Navbar ref={sectionRef} scrollToSection={scrollToSection} AboutSectionRef={AboutSectionRef} projectsRef={projectsSectionRef} technologiesRef={technologiesSectionRef} contactRef={contactRef}/>
       {/**fill in styled divs with components that make up application */}
       <div className="bg-[#88b5bb51] h-[90vh] w-full  sectional ">
         {/**make |hero section| sections with styled div*/}
@@ -50,7 +49,7 @@ function App() {
           </p>
         </div>
       </div>
-      <div className="bg-[#2c5d63] h-[90vh] w-full text-center  sectional ">
+      <div ref={projectsSectionRef} className="bg-[#2c5d63] h-[90vh] w-full text-center  sectional ">
         <div class="custom-shape-divider-bottom-1712158986">
           <svg
             data-name="Layer 1"
@@ -88,7 +87,7 @@ function App() {
 
         {/**put carousel displaying projects HERE in a seperate component*/}
       </div>
-      <div className="bg-[#c1a03fd5] h-[100vh] w-full snap-center">
+      <div ref={technologiesSectionRef} className="bg-[#c1a03fd5] h-[100vh] w-full snap-center">
 <div class="custom-shape-divider-top-1712164460">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill" fill="#2c5d63"></path>
@@ -97,23 +96,27 @@ function App() {
 
         <Technologies />
       </div>
-      <div className="bg-[#e3cccc] h-[90vh] w-full  sectional">
+      <div ref={AboutSectionRef} className="bg-[#e3cccc] h-[90vh] w-full  sectional">
         {/**make sections with styled div*/} 
         {/**image blob*/}
-        {/* <svg viewBox="15 16 200 200" xmlns="http://www.w3.org/2000/svg">
-<clipPath id="clipBlob">
-  <path d="M21.4,-39.7C28.7,-28.6,36.2,-24.3,46.3,-16.9C56.3,-9.4,68.9,1.1,72.1,13.5C75.2,25.9,69,40.2,59.4,51.8C49.8,63.5,36.9,72.5,24.1,71.5C11.2,70.5,-1.5,59.4,-16.1,55.1C-30.7,50.7,-47.2,52.9,-55.7,46.4C-64.1,39.9,-64.6,24.6,-63.1,11.3C-61.5,-2,-58,-13.5,-55.2,-27.6C-52.4,-41.7,-50.4,-58.6,-41.4,-68.8C-32.3,-79.1,-16.2,-82.8,-4.6,-75.7C7.1,-68.6,14.1,-50.8,21.4,-39.7Z" transform="translate(55 65)  scale(0.6)" />
-</clipPath>
-<image href={image} width="100" height="100" clip-path="url(#clipBlob)" />
-</svg> */}
 <Portrait/>
         {/**image blob */}
-
       </div>
-      <div className="bg-[#2c5d63] h-[90vh] w-full  sectional">
+      <div ref={contactRef} className="bg-[#2c5d63] h-[90vh] w-full  sectional">
         {/**make sections with styled div*/}
-        Social links 
-        contact CTA/FORUM
+        <div className="grid grid-cols-2">
+          <div className="flex items-center justify-center gap-6">
+            <a href="https://www.linkedin.com/in/james-h-259282273/" className="inline-block p-1 rounded-lg hover:bg-blue-600">
+          <FaLinkedin className="text-[150px]"/>
+            </a>
+            <a href="https://github.com/00gigs" className="inline-block p-1 rounded-full hover:bg-white">
+          <FaGithub className="text-[150px]"/>
+            </a>
+          </div>
+          <div>
+<Contact/>
+          </div>
+        </div>
       </div>
     </div>
 

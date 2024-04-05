@@ -7,7 +7,7 @@ import { GrClose } from "react-icons/gr";
 
 {/* implement status bar*/}
 
-const Navbar = ({ scrollToSection, heroRef, projectsRef, technologiesRef }) => {
+const Navbar = ({ scrollToSection, AboutSectionRef, projectsRef, technologiesRef,contactRef }) => {
 
   const [openMenu, setOpenMenu] = useState(false)
   
@@ -21,7 +21,7 @@ const Navbar = ({ scrollToSection, heroRef, projectsRef, technologiesRef }) => {
     <div className='font-noto-sans text-[34px]  h-[80px]  glass-effect'>
       <div ref={containerRef}  className='flex justify-between w-full items-center p-3'>
         <div  className='ml-[1rem] bg-black text-white rounded-xl text-[28px] p-1 font-poppins uppercase hover:text-green-100 hover:duration-500 hover:tracking-widest'>
-      <button>
+      <button onClick={()=>scrollToSection(contactRef)}>
           Consult Now{/**once clicked should snap scroll to contact forum  */}
       </button>
         </div>
@@ -37,9 +37,9 @@ const Navbar = ({ scrollToSection, heroRef, projectsRef, technologiesRef }) => {
      
  {openMenu && (<div className='flex glass-effect h-14 justify-end' 
 ><ul className='flex gap-10 my-2 mr-7'>
-  <li className='cursor-pointer bg-[#ddf3b29f] rounded-xl p-2 hover:bg-[#ddf3b2ed]' onClick={() => scrollToSection(heroRef)}>Menu item 1</li>
-  <li className='cursor-pointer bg-[#ddf3b29f] rounded-xl p-2 hover:bg-[#ddf3b2ed]' onClick={() => scrollToSection(projectsRef)}>Menu item 2</li>
-  <li className='cursor-pointer bg-[#ddf3b29f] rounded-xl p-2 hover:bg-[#ddf3b2ed]' onClick={() => scrollToSection(technologiesRef)}>Menu item 3</li>
+  <li className='cursor-pointer bg-[#ddf3b29f] rounded-xl p-2 hover:bg-[#ddf3b2ed]' onClick={() => scrollToSection(AboutSectionRef)}>ABOUT ME</li>
+  <li className='cursor-pointer bg-[#ddf3b29f] rounded-xl p-2 hover:bg-[#ddf3b2ed]' onClick={() => scrollToSection(projectsRef)}>PROJECTS</li>
+  <li className='cursor-pointer bg-[#ddf3b29f] rounded-xl p-2 hover:bg-[#ddf3b2ed]' onClick={() => scrollToSection(technologiesRef)}>TECHNOLOGIES</li>
 </ul>
 
 </div>)}
