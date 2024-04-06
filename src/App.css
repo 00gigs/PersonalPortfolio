@@ -24,9 +24,34 @@
 /*Carousel swiping*/
 
 .swiper {
-  width: 65%;
+  width: 100%;
   height: 60%;
 
+}
+
+
+@media (min-width: 640px) { /* Tailwind's 'sm' breakpoint */
+  .swiper {
+    width: 75%; /* Adjust as needed */
+  }
+}
+
+@media (min-width: 768px) { /* Tailwind's 'md' breakpoint */
+  .swiper {
+    width: 66.666667%; /* Adjust as needed */
+  }
+}
+
+@media (min-width: 1024px) { /* Tailwind's 'lg' breakpoint */
+  .swiper {
+    width: 50%; /* Adjust as needed */
+  }
+}
+
+@media (min-width: 1280px) { /* Tailwind's 'xl' breakpoint */
+  .swiper {
+    width:75%; /* Adjust as needed */
+  }
 }
 
 .swiper-slide {

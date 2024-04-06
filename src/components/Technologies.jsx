@@ -11,12 +11,12 @@ const Technologies = () => {
   return (
     <div>
       <div className="font-roboto font-bold text-4xl moving-text tracking-widest  shadow-2xl bg-slate-300 p-1 rounded-xl">
-        TECHNOLOGY TOOLBOX 🧰
+         TOOLBOX 🧰
       </div>
-      <div className="grid  grid-rows-3 grid-flow-col  mt-14 ml-[2rem] gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-14 ml-[2rem] gap-5">
         <div>
           <FaReact className="text-[3rem] bg-[#2fa2cc] rounded-xl" />
-          <p className=" font-roboto mt-3 ">
+          <p className=" font-roboto mt-3 text-sm md:text-base lg:text-lg ">
             Enables interactive user interfaces with reusable components,
             virtual DOM for efficient updates, and a vast ecosystem for web app
             development.

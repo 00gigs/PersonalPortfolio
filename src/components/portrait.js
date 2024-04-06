@@ -2,21 +2,22 @@ import React from 'react'
 import image from '../images/me.jpg'
 const Portrait = () => {
   return (
-    <div>  
-        <svg viewBox="15 16 200 200" xmlns="http://www.w3.org/2000/svg">
-    <clipPath id="clipBlob">
-      <path d="M21.4,-39.7C28.7,-28.6,36.2,-24.3,46.3,-16.9C56.3,-9.4,68.9,1.1,72.1,13.5C75.2,25.9,69,40.2,59.4,51.8C49.8,63.5,36.9,72.5,24.1,71.5C11.2,70.5,-1.5,59.4,-16.1,55.1C-30.7,50.7,-47.2,52.9,-55.7,46.4C-64.1,39.9,-64.6,24.6,-63.1,11.3C-61.5,-2,-58,-13.5,-55.2,-27.6C-52.4,-41.7,-50.4,-58.6,-41.4,-68.8C-32.3,-79.1,-16.2,-82.8,-4.6,-75.7C7.1,-68.6,14.1,-50.8,21.4,-39.7Z" transform="translate(55 65)  scale(0.6)" />
-    </clipPath>
-    <image href={image} width="100" height="100" clip-path="url(#clipBlob)" />
-    <text x="35" y="90" fontSize="6" fill="black" fontFamily='Rubik'>More of James</text>
-    <text x="45" y="99" fontSize="6" fill="black" fontFamily='Rubik'>from James...</text>
-  {/* Text element for to the right of the blob */}
-  <foreignObject x="110" y="18" width="100" height="111">
-  <div xmlns="http://www.w3.org/1999/xhtml" style={{fontSize:'4pt', fontFamily: 'Rubik', color: 'black', textAlign:'center', backgroundColor:'hsl(73 33% 86% / 0.5)', height:'6.9rem', borderRadius:'2%', padding:'.6pt'}}>
-    Why do I love development so much? I love the rush I gain when I solve a problem after it left me stumped for a couple days or few hours. I love the creativity process that goes into  development from planning to designing to implementing . I love that I can  utilize my skills where I can solve real world issues via technology, just simply by typing on a computer. As long as its an idea that can be in words or an image, I will purse that vision  with technologies. The only difference between a dream and real life is that only you can see your dream. technology always others to see that dream.
-  </div>
-</foreignObject>
-    </svg>
+   <div className="flex flex-col md:flex-row items-center text-center md:space-x-4">
+      {/* SVG Blob with Image */}
+      <div className="w-full max-w-xs md:max-w-none">
+        <svg viewBox="0 -30 200 200" xmlns="http://www.w3.org/2000/svg">
+          <clipPath id="clipBlob">
+            <path fill="#FF0066" d="M49.4,-78.4C64.5,-70.2,76.8,-55,80.3,-39C83.8,-23,78.5,-11.5,78.6,2.2C78.7,15.8,84.1,31.5,76.6,41.7C69.2,51.8,48.8,56.3,31.4,65.8C14,75.3,-0.4,89.9,-16.3,89C-32.2,88.1,-64.4,71.7,-75.2,52.4C-85.9,33.1,-75.3,10.9,-67.8,-7.7C-60.3,-26.2,-55.9,-40.1,-44.9,-54.8C-33.9,-69.5,-16.9,-85,2.3,-88.4C21.5,-91.8,43,-83.6,49.4,-78.4Z" transform="translate(100 100)" />
+          </clipPath>
+          <image href={image} width="200" height="200" clip-path="url(#clipBlob)" />
+        </svg>
+      </div>
+
+      {/* Text Content */}
+      <div className=" font-rubik w-full max-w-xs md:max-w-none bg-opacity-50 bg-white p-4 rounded-lg shadow text-base lg:text-[20px]">
+      Why do I love development so much? I love the rush I gain when I solve a problem after it left me stumped for a couple days or few hours. I love the creativity process that goes into  development from planning to designing to implementing . I love that I can  utilize my skills where I can solve real world issues via technology, just simply by typing on a computer. As long as its an idea that can be in words or an image, I will purse that vision  with technologies. The only difference between a dream and real life is that only you can see your dream. Technology allows others to see that dream.
+
+      </div>
     </div>
   )
 }

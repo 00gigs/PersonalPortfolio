@@ -30,12 +30,12 @@ function App() {
     <div className="  bg-slate-100">
       <Navbar ref={sectionRef} scrollToSection={scrollToSection} AboutSectionRef={AboutSectionRef} projectsRef={projectsSectionRef} technologiesRef={technologiesSectionRef} contactRef={contactRef}/>
       {/**fill in styled divs with components that make up application */}
-      <div className="bg-[#88b5bb51] h-[90vh] w-full  sectional ">
+      <div className="bg-[#88b5bb51] min-h-[90vh] w-full  sectional ">
         {/**make |hero section| sections with styled div*/}
-        <div className="grid  grid-cols-2 items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center">
           <Header />
           {/**Main title or welcome message */}
-          <p className="flex justify-start font-raleway font-thin text-[25px] mt-[6rem]">
+          <p className="font-raleway font-thin text-[16px] lg:text-[25px] mt-12 sm:mt-24 md:mt-[6rem] leading-loose sm:leading-loose md:leading-loose text-left sm:text-left">
             First, thank you for taking the time to visit my page. You are here
             to view my skills and understand why we should engage in business. I
             want my technology and skills to benefit you and fit your needs. As
@@ -87,7 +87,7 @@ function App() {
 
         {/**put carousel displaying projects HERE in a seperate component*/}
       </div>
-      <div ref={technologiesSectionRef} className="bg-[#c1a03fd5] h-[100vh] w-full snap-center">
+      <div ref={technologiesSectionRef} className="bg-[#c1a03fd5] min-h-[100vh] w-full snap-start">
 <div class="custom-shape-divider-top-1712164460">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill" fill="#2c5d63"></path>
@@ -96,21 +96,21 @@ function App() {
 
         <Technologies />
       </div>
-      <div ref={AboutSectionRef} className="bg-[#e3cccc] h-[90vh] w-full  sectional">
+      <div ref={AboutSectionRef} className="bg-[#e3cccc] min-h-[90vh] w-full  sectional">
         {/**make sections with styled div*/} 
         {/**image blob*/}
 <Portrait/>
         {/**image blob */}
       </div>
-      <div ref={contactRef} className="bg-[#2c5d63] h-[90vh] w-full  sectional">
+      <div ref={contactRef} className="bg-[#2c5d63] min-h-[90vh] w-full  snap-start">
         {/**make sections with styled div*/}
-        <div className="grid grid-cols-2">
-          <div className="flex items-center justify-center gap-6">
-            <a href="https://www.linkedin.com/in/james-h-259282273/" className="inline-block p-1 rounded-lg hover:bg-blue-600">
-          <FaLinkedin className="text-[150px]"/>
+        <div className="flex flex-col items-center justify-center md:grid md:grid-cols-2 md:gap-4 p-4">
+          <div className="flex flex-col items-center justify-center mt-4 md:mt-0">
+            <a href="https://www.linkedin.com/in/james-h-259282273/" className="mb-2 md:mb-0 p-1 rounded-lg hover:bg-blue-600">
+          <FaLinkedin className="text-[75px] md:text-[150px]"/>
             </a>
-            <a href="https://github.com/00gigs" className="inline-block p-1 rounded-full hover:bg-white">
-          <FaGithub className="text-[150px]"/>
+            <a href="https://github.com/00gigs" className="p-1 rounded-full hover:bg-white">
+          <FaGithub className="text-[75px] md:text-[150px]"/>
             </a>
           </div>
           <div>

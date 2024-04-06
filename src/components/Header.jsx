@@ -26,9 +26,9 @@ const Header = () => {
   
 
   return (
-    <div>
+    <div className="mb-12">
        {/* Apply the ref to your text element */}
-       <h1 ref={textRef}  className='font-rubik font-bold text-5xl ml-4 mt-7 '>MEET JAMES HARRINGTON THE FULLSTACK DEVELOPER👨🏻‍💻</h1>
+       <h1 ref={textRef}  className='font-rubik font-bold text-3xl ml-4 mt-3 md:text-5xl'>MEET JAMES HARRINGTON THE FULLSTACK DEVELOPER👨🏻‍💻</h1>
     </div>
   )
 }
