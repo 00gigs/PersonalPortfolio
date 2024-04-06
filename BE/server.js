@@ -3,7 +3,7 @@ const cors = require('cors');
 const express = require('express')
 const nodemailer = require('nodemailer');
 const app = express()
-const port = 3001
+const port = 1000
 app.use(cors())
 app.use(express.json())
 
