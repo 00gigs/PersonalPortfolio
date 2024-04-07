@@ -23,7 +23,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    axios.post('http://localhost:3001/send-email', formData)
+    axios.post('https://personalportfolio-jnbv.onrender.com/send-email', formData)
       .then((response) => {
         console.log('Success:', response.data);
         notifySubmit()
