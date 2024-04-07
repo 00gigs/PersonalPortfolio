@@ -51,7 +51,7 @@ const Carousel = () => {
             }}
           >
             <SwiperSlide>
-              <div className="mt-6 p-1 font-semibold font-noto-sans mx-2 text-[19px]">
+              <div className="mt-6 p-1 font-thin font-noto-sans mx-2 text-[13px] md:text-[20px] md:font-semibold">
                 This Web application was my first fullstack deployment. A fintech
                 application that encourages users to be proactive about
                 investing and saving using Personal Development Planning
@@ -93,11 +93,11 @@ const Carousel = () => {
             }}
           >
             <SwiperSlide>
-              <div className="p-2 font-semibold font-noto-sans mx-2 text-[18px]">
+              <div className="mt-1 p-1 font-thin font-noto-sans mx-2 text-[12px] md:text-[20px] md:font-semibold">
               Hanz , the "Thumbtack" alternative that is more cost effective ,local
               community oriented and secure as an intermediary between customer
               and laborer. The Website is built on a NextJS framework with
-              React with a custom built fetch API integrated with MongoDb for
+              React with a custom built fetch API integrated with MongoDB for
               serverSide actions. I developed this Website with a vision in mind. 
               In my younger year  I did moving and hauling on the side for extra income. I seen the potential 
               the internet can give to a business and decided to try and generate my own bulk trash leads. This led me to the creation 
