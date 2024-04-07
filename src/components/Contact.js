@@ -41,7 +41,7 @@ const Contact = () => {
 
   return (
     <div className='mt-14 flex justify-center'>
-      <div className='bg-white h-[40em] w-[40em] rounded-xl shadow-xl flex justify-center items-center'>
+      <div className='bg-white h-[40em] w-[23em] rounded-xl shadow-xl flex justify-center items-center sm:w-[40em]'>
         <form onSubmit={handleSubmit} className='flex flex-col gap-10'>
           <p className='font-Roboto'>If you made it this far, we can go further.</p>
           <input
